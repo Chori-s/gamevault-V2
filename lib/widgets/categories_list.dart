@@ -21,8 +21,15 @@ class CategoriesList extends StatelessWidget {
         return Card(
           margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
           child: ListTile(
-            leading: Icon(categoria['icono'] as IconData, color: Colors.deepPurple, size: 30),
-            title: Text(categoria['nombre'] as String, style: const TextStyle(fontWeight: FontWeight.w500)),
+            leading: Icon(
+              categoria['icono'] as IconData,
+              color: Colors.deepPurple,
+              size: 30,
+            ),
+            title: Text(
+              categoria['nombre'] as String,
+              style: const TextStyle(fontWeight: FontWeight.w500),
+            ),
             trailing: const Icon(Icons.arrow_forward_ios, size: 16),
             onTap: () {
               print('Categoría seleccionada: ${categoria['nombre']}');
